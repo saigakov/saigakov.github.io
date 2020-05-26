@@ -1,0 +1,219 @@
+@media (max-width: 1200px) {
+    .header {
+        padding: 9px 40px;
+    }
+    .promo {
+        padding: 150px 40px 110px 40px;
+        &__subheader {
+            margin-top: 50px;
+        }
+        &__link {
+            margin-top: 50px;
+        }
+    }
+    .advantages {
+        padding: 60px 55px ;
+        &__block {
+            margin-top: 25px;
+        }
+    }
+    .callback {
+        padding: 103px 0;
+    }
+    .button {
+        &_big {
+            margin-top: 50px;
+        }
+    }
+    .title {
+        &_white {
+            font-size: 30px;
+        }
+    }
+    .feed-form {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        padding: 9px 5px;
+    }
+    .promo {
+        padding: 120px 40px 90px 40px;
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader {
+            font-size: 34px;
+        }
+    }
+    .advantages {
+        &__block {
+            width: 160px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+    }
+    .callback {
+        padding: 60px 0;
+    }
+    .button {
+        &_big {
+            width: 400px;
+            height: 60px;
+            font-size: 21px;
+        }
+        &_medium {
+            width: 330px;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    }
+    .title {
+        &_white {
+            font-size: 26px;
+        }
+    }
+    .feed-form {
+        input {
+            max-width: 330px;
+            height: 45px;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 58px;
+        &__logo {
+            height: 40px;
+            line-height: 39px;
+        }
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
+            transition: 0.8s all;
+            z-index: 3;
+            &_active {
+                left: 0;
+            }
+        }
+        &__contact {
+            margin-right: 20px;
+        }
+        .hamburger {
+            display: block;
+            right: 10px;
+            top: 50%;
+            span {
+                display: block;
+                height: 2px;
+                width: 30px;
+                background-color: #ffffff;
+                margin-bottom: 5px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 30px;
+        }
+    }
+    .advantages {
+        padding: 40px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__block {
+            width: 220px;
+            height: 290px;
+        }
+        &__img {
+            height: 150px;
+        }
+        &__descr {
+            margin-top: 10px;
+            &_mt25 {
+                margin-top: 45px;
+            }
+        }
+    }
+    .button {
+        &_big {
+            width: 330px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+    .title {
+        font-size: 24px;
+    }
+    
+}
+@media (max-width: 575px) {
+    .header {
+        &__phone, .button {
+            display: none;
+        }
+    }
+    .promo {
+        padding: 120px 5px 90px 5px ;
+        &__header {
+            font-size: 28px;
+        }
+    }
+    .callback {
+        padding: 60px 10px;
+    }
+    .button {
+        &_big, &_medium {
+            width: 230px;
+        }
+    }
+    .title {
+        &_white {
+            margin: 0;
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+    .feed-form {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        input {
+            min-width: 280px;
+        }
+    }
+}
