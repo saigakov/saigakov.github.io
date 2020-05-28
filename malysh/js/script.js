@@ -80,8 +80,8 @@ window.addEventListener('DOMContentLoaded', () => {
         /* console.log(event); */
         if (event.deltaY > 0 ) {
             header.classList.add('header_active');
+            header.classList.add('fade');
         } else {
-            /* header.classList.add('fadeOut'); */
             header.classList.remove('header_active');
         }
     };
