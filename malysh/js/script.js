@@ -8,7 +8,7 @@ $(document).ready(function() {
                 },
                 phone: "required",
                 email: {
-                    required: true,
+                    required: false,
                     email: true
                 }
             },
@@ -49,6 +49,67 @@ $(document).ready(function() {
         });
         return false;
     });
+
+    //tabs
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+        $(this)
+          .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+          .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+    });
+
+    function toggleSlide(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                $('.catalog__content').eq(i).toggleClass('catalog__content_active');
+            })
+        });
+    };
+
+    toggleSlide('.catalog-item__link');
+    toggleSlide('.catalog-item__back');
+
+    //slider-reviews
+    $('.slider-reviews__content').slick({
+        speed:1200,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+                }
+            
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+                }
+            
+            }
+        ]
+      });
+
     
 });
 
@@ -72,19 +133,6 @@ window.addEventListener('DOMContentLoaded', () => {
             list.classList.toggle('header__list_active');
         })
     });
-
-    //hide header
-    const header = document.querySelector('header');
-
-    document.onwheel = (event) => {
-        /* console.log(event); */
-        if (event.deltaY > 0 ) {
-            header.classList.add('header_active');
-            header.classList.add('fade');
-        } else {
-            header.classList.remove('header_active');
-        }
-    };
 
     
         
