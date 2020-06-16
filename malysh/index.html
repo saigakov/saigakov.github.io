@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>malyshkrepysh</title>
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/base/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,8 +14,8 @@
                 <ul class="header__list">
                     <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
                     <li class="header__item"><a class="header__link" href="#advantages">Преимущества</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Каталог</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
+                    <li class="header__item"><a class="header__link" href="#catalog">Каталог</a></li>
+                    <li class="header__item"><a class="header__link" href="#slider-reviews">Отзывы</a></li>
                     <li class="header__contact header__contact_320px">
                         <a href="tel:+79999999999" class="header__phone header__phone_320px">+7(999)-999-99-99</a>
                     </li>
@@ -44,7 +42,7 @@
             </h2>
             <button class="button button_big">УЗНАТЬ ЦЕНЫ</button>
             <div class="promo__link">или
-                <a href="#">ПЕРЕЙТИ В КАТАЛОГ </a>
+                <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ </a>
             </div>
         </div>
     </section>
@@ -54,22 +52,28 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__block">
-                    <div class="advantages__img">
-                        <img src="icons/eco.png" alt="eco">
+                    <div class="advantages__wrap">
+                        <div class="advantages__img">
+                            <img src="icons/eco.png" alt="eco">
+                        </div>
                     </div>
-                    <div class="advantages__descr">Мы используем<br> экологически чистые материалы.</div>
+                    <div class="advantages__descr">Мы используем<br> экологически чистые<br> материалы.</div>
                 </div>
                 <div class="advantages__block">
-                    <div class="advantages__img">
-                        <img src="icons/handshake-solid.png" alt="handshake-solid">
+                    <div class="advantages__wrap">
+                        <div class="advantages__img">
+                            <img src="icons/handshake-solid.png" alt="handshake-solid">
+                        </div>
                     </div>
-                    <div class="advantages__descr">Работаем без предоплаты.</div>
+                    <div class="advantages__descr">Работаем без<br> предоплаты.</div>
                 </div>
                 <div class="advantages__block">
-                    <div class="advantages__img">
-                        <img src="icons/cdec.png" alt="cdec">
+                    <div class="advantages__wrap">
+                        <div class="advantages__img">
+                            <img src="icons/cdec.png" alt="cdec">
+                        </div>
                     </div>
-                    <div class="advantages__descr advantages__descr_mt25">Работаем с любой транспортной компанией и почтой.</div>
+                    <div class="advantages__descr advantages__descr_mt25">Работаем с любой<br> транспортной компанией<br> и почтой.</div>
                 </div>
             </div>
         </div>
@@ -87,9 +91,266 @@
             </form>
         </div>
     </section>
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="title">КАТАЛОГ</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>Растущий стульчик</div></li>
+                <li class="catalog__tab"><div>Мягкий чехол</div></li>
+                <li class="catalog__tab"><div>Качели</div></li>
+            </ul>
+
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog__item">
+                    <img src="img/chairs/chair1.jpg" alt="стульчик ШЛИФОВАННЫЙ">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Растущий стульчик<br> <span>ШЛИФОВАННЫЙ</span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/chair2.jpg" alt="стульчик ПОКРЫТИЕ БЕСЦВЕТНЫЙ ЛАК">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Растущий стульчик<br> <span>ПОКРЫТИЕ БЕСЦВЕТНЫЙ ЛАК</span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/chair3.jpg" alt="стульчик мебельный лак">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Растущий стульчик<br> <span>ПОКРЫТИЕ МЕБЕЛЬНЫЙ ЛАК</span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/stand.jpg" alt="подставка">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title"><span>подставка</span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/chair 5.jpg" alt="стульчик ПОКРАШЕННЫЙ В ЦВЕТ">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Растущий стульчик<br> <span>ПОКРАШЕННЫЙ В ЦВЕТ</span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/table.jpg" alt="Столик для кормления">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Столик для кормления<br> <span></span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog__item">
+                    <img src="img/chairs/soft1.jpg" alt="Мягкий чехол из хб ткани">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Мягкий чехол<br>
+                        из<span> ХБ </span>ткани</div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/chairs/soft2.jpg" alt="Столик для кормления">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Мягкий чехол<br>
+                        из мебельной ткани <span></span></div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog__item">
+                    <img src="img/swing/swing1.jpg" alt="Качель">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Качель</div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/swing/swing2.jpg" alt="Качель - люлечка">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Качель - люлечка</div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/swing/swing3.jpg" alt="МКачель - гамак">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Качель - гамак</div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img src="img/swing/swing4.jpg" alt="Качель - кокон">
+                    <div class="catalog__bgc"></div>
+                    <div class="catalog__title">Качель - кокон</div>
+                    <div class="catalog__detailed">ПОДРОБНЕЕ</div>
+                    <div class="catalog__item-footer">
+                        <div class="catalog__price">Цена : 5000</div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="palette">
+        <div class="container">
+            <h2 class="title">Палитра мебельный лак</h2>
+            <div class="palette__wrapper">
+                <div class="palette__wrap">
+                    <div class="title title_color">БЕЛЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/1.JPG" alt="БЕЛЫЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ДУБ ЗОЛОТОЙ</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/2.JPG" alt="ДУБ ЗОЛОТОЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ДУБ</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/3.JPG" alt="ДУБ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">КРАСНОЕ ДЕРЕВО</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/4.JPG" alt="КРАСНОЕ ДЕРЕВО">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ТИКОВОЕ ДЕРЕВО</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/5.JPG" alt="ТИКОВОЕ ДЕРЕВО">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ТЕМНЫЙ ДУБ</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/6.JPG" alt="ТЕМНЫЙ ДУБ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ВЕНГЕ</div>
+                    <div class="palette__img">
+                        <img src="img/color_lacquer/7.JPG" alt="ВЕНГЕ">
+                    </div>
+                </div>
+            </div>
+            <div class="important">Важно: цвета отображаемые на сайте, максимально точно передают цвет готового<br>покрытия. Однако, мы не можем гарантировать полное сходство, так как цвета могут<br>отличаться в зависимости от настроек и разрешения вашего экрана.</div>
+        </div>
+    </section>
+    <section class="palette">
+        <div class="container">
+            <h2 class="title">Палитра стульчика цветовая</h2>
+            <div class="palette__wrapper">
+                <div class="palette__wrap">
+                    <div class="title title_color">БЕЛЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/1.jpg" alt="БЕЛЫЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">СЛОНОВАЯ КОСТЬ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/2.jpg" alt="СЛОНОВАЯ КОСТЬ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">БИРЮЗОВЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/3.jpg" alt="БИРЮЗОВЫЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">СИРЕНЕВЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/4.jpg" alt="СИРЕНЕВЫЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">РОЗОВЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/5.jpg" alt="РОЗОВЫЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">ГОЛУБОЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/6.jpg" alt="ГОЛУБОЙ">
+                    </div>
+                </div>
+                <div class="palette__wrap">
+                    <div class="title title_color">СЕРЫЙ</div>
+                    <div class="palette__img">
+                        <img src="img/chairs_color/7.jpg" alt="СЕРЫЙ">
+                    </div>
+                </div>
+            </div>
+            <div class="important">Важно: цвета отображаемые на сайте, максимально точно передают цвет готового<br>покрытия. Однако, мы не можем гарантировать полное сходство, так как цвета могут<br>отличаться в зависимости от настроек и разрешения вашего экрана.</div>
+        </div>
+    </section>
+    <section class="slider-reviews" id="slider-reviews">
+        <div class="container">
+            <h2 class="title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+            <div class="slider-reviews__content">
+                <div class="slider-reviews__img"><img src="img/reviews/1.PNG" alt="reviews"></div>
+                <div class="slider-reviews__img"><img src="img/reviews/2.PNG" alt="reviews"></div>
+                <div class="slider-reviews__img"><img src="img/reviews/3.PNG" alt="reviews"></div>
+                <div class="slider-reviews__img"><img src="img/reviews/4.PNG" alt="reviews"></div>
+                <div class="slider-reviews__img"><img src="img/reviews/5.PNG" alt="reviews"></div>
+                <div class="slider-reviews__img"><img src="img/reviews/6.PNG" alt="reviews"></div>
+              </div>
+        </div>
+    </section>
+    
+
+
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
