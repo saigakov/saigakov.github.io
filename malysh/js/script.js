@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    //validation form
     function validateForms(form){
         $(form).validate({
             rules: {
@@ -29,6 +31,9 @@ $(document).ready(function() {
     
     
     validateForms('#callback-form');
+    validateForms('#feed-form');
+    validateForms('#order-form');
+
     
     $('input[name=phone]').mask("+7 (999) 999-99-99");
     
@@ -75,6 +80,8 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
         responsive: [
@@ -98,7 +105,7 @@ $(document).ready(function() {
             
             },
             {
-                breakpoint: 360,
+                breakpoint: 400,
                 settings: {
                 arrows: false,
                 centerMode: true,
@@ -108,7 +115,26 @@ $(document).ready(function() {
             
             }
         ]
-      });
+    });
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog__title').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
+
+    //auto resize textaria
+    $('textarea').autoResize();
 
     
 });
