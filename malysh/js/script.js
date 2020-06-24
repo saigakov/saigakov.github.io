@@ -138,13 +138,6 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         })
     });
-    
-    
-    
-
-
-    //auto resize textaria
-    $('textarea').autoResize();
 
     
 });
@@ -179,5 +172,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
-
